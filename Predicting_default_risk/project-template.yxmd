@@ -3,7 +3,7 @@
   <Nodes>
     <Node ToolID="1">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="54" y="54" width="336" height="24" />
+        <Position x="54" y="30" width="336" height="24" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -23,7 +23,7 @@
     </Node>
     <Node ToolID="7">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="90" y="426" width="276" height="60" />
+        <Position x="90" y="402" width="276" height="60" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -43,7 +43,7 @@
     </Node>
     <Node ToolID="13">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="402" y="54" width="288" height="24" />
+        <Position x="402" y="30" width="288" height="24" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -63,7 +63,7 @@
     </Node>
     <Node ToolID="18">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="714" y="54" width="708" height="24" />
+        <Position x="714" y="30" width="708" height="24" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -83,7 +83,7 @@
     </Node>
     <Node ToolID="71">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-        <Position x="78" y="258" />
+        <Position x="78" y="234" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -129,11 +129,11 @@ Query=`Sheet1$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="78">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="282" y="186" />
+        <Position x="282" y="162" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\CHINAE~1\AppData\Local\Temp\Engine_8712_db26081b54f848e9b075cf05457bc5c9_\Engine_8760_2a57a96ead18417480f25c4830a918d5_.yxdb</TempFile>
+          <TempFile>C:\Users\CHINAE~1\AppData\Local\Temp\Engine_3984_482a3e25dff1439d9475642b7c904322_\Engine_8760_fefc4aaf46b149b69262f6681aeadde1_.yxdb</TempFile>
           <Layout>
             <View1>
               <Hints>
@@ -152,7 +152,7 @@ Query=`Sheet1$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="80">
       <GuiSettings>
-        <Position x="282" y="330" />
+        <Position x="282" y="306" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -173,11 +173,11 @@ Query=`Sheet1$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="81">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="426" y="366" />
+        <Position x="426" y="342" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\CHINAE~1\AppData\Local\Temp\Engine_8712_db26081b54f848e9b075cf05457bc5c9_\Engine_8760_eb02a62a4ae84d2aabd949788019f8b7_.yxdb</TempFile>
+          <TempFile>C:\Users\CHINAE~1\AppData\Local\Temp\Engine_3984_482a3e25dff1439d9475642b7c904322_\Engine_8760_2470b75cbef3441797425d17a134683c_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -201,11 +201,11 @@ Query=`Sheet1$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="83">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="426" y="306" />
+        <Position x="426" y="282" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\CHINAE~1\AppData\Local\Temp\Engine_8712_db26081b54f848e9b075cf05457bc5c9_\Engine_8760_fa587efb41b24f1ebca74af3ea2e59a8_.yxdb</TempFile>
+          <TempFile>C:\Users\CHINAE~1\AppData\Local\Temp\Engine_3984_482a3e25dff1439d9475642b7c904322_\Engine_8760_407b6d60cb9d47a08d38b481279d2f35_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -227,7 +227,7 @@ Query=`Sheet1$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="79">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="282" y="258" />
+        <Position x="282" y="234" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -260,7 +260,7 @@ Query=`Sheet1$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="84">
       <GuiSettings>
-        <Position x="426" y="258" />
+        <Position x="426" y="234" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -306,7 +306,7 @@ Query=`Sheet1$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="85">
       <GuiSettings>
-        <Position x="930" y="102" />
+        <Position x="930" y="78" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -330,11 +330,11 @@ Query=`Sheet1$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="86">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="1038" y="114" />
+        <Position x="1038" y="90" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\CHINAE~1\AppData\Local\Temp\Engine_8712_db26081b54f848e9b075cf05457bc5c9_\Engine_8760_4bcf5ad53191451a9e19561757626261_.yxdb</TempFile>
+          <TempFile>C:\Users\CHINAE~1\AppData\Local\Temp\Engine_3984_482a3e25dff1439d9475642b7c904322_\Engine_8760_64595c17ba014e698dfccabc66da5376_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -358,11 +358,11 @@ Query=`Sheet1$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="87">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="930" y="258" />
+        <Position x="930" y="234" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\CHINAE~1\AppData\Local\Temp\Engine_8712_db26081b54f848e9b075cf05457bc5c9_\Engine_8760_15bef12ba94341b3bd9b8e06751d1e0e_.yxdb</TempFile>
+          <TempFile>C:\Users\CHINAE~1\AppData\Local\Temp\Engine_3984_482a3e25dff1439d9475642b7c904322_\Engine_8760_618b7d72f4aa4fb3ad05d444a27e93a4_.yxdb</TempFile>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
@@ -374,11 +374,11 @@ Query=`Sheet1$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="88">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="930" y="174" />
+        <Position x="930" y="150" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\CHINAE~1\AppData\Local\Temp\Engine_8712_db26081b54f848e9b075cf05457bc5c9_\Engine_8760_6e49d85f0cab42c4a6f5ddd04114d6dc_.yxdb</TempFile>
+          <TempFile>C:\Users\CHINAE~1\AppData\Local\Temp\Engine_3984_482a3e25dff1439d9475642b7c904322_\Engine_8760_29661c87a6454ce79617afcb1cf56334_.yxdb</TempFile>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
@@ -390,11 +390,11 @@ Query=`Sheet1$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="89">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="930" y="318" />
+        <Position x="930" y="294" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\CHINAE~1\AppData\Local\Temp\Engine_8712_db26081b54f848e9b075cf05457bc5c9_\Engine_8760_a0528127329c4442bbf79f0140821bf4_.yxdb</TempFile>
+          <TempFile>C:\Users\CHINAE~1\AppData\Local\Temp\Engine_3984_482a3e25dff1439d9475642b7c904322_\Engine_8760_5aae86cd7e6e4764b53a9b5787ab6394_.yxdb</TempFile>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
@@ -406,11 +406,11 @@ Query=`Sheet1$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="91">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="582" y="186" />
+        <Position x="582" y="162" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\CHINAE~1\AppData\Local\Temp\Engine_8712_db26081b54f848e9b075cf05457bc5c9_\Engine_8760_c1d377a0d28e463fa62653a5a16ce9a5_.yxdb</TempFile>
+          <TempFile>C:\Users\CHINAE~1\AppData\Local\Temp\Engine_3984_482a3e25dff1439d9475642b7c904322_\Engine_8760_7824af92ac274000bb8504a18f0b61bc_.yxdb</TempFile>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
@@ -422,7 +422,7 @@ Query=`Sheet1$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="93">
       <GuiSettings>
-        <Position x="1158" y="222" />
+        <Position x="1158" y="198" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -466,7 +466,7 @@ Query=`Sheet1$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="92">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
-        <Position x="1038" y="234" />
+        <Position x="1038" y="210" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -485,11 +485,11 @@ Query=`Sheet1$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="90">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="930" y="402" />
+        <Position x="930" y="378" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\CHINAE~1\AppData\Local\Temp\Engine_8712_db26081b54f848e9b075cf05457bc5c9_\Engine_8760_ac0e79f4110b4c258019dc94531753a6_.yxdb</TempFile>
+          <TempFile>C:\Users\CHINAE~1\AppData\Local\Temp\Engine_3984_482a3e25dff1439d9475642b7c904322_\Engine_8760_bb1025e764b6407d993c9c080305ef64_.yxdb</TempFile>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
@@ -501,11 +501,11 @@ Query=`Sheet1$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="94">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="1254" y="138" />
+        <Position x="1254" y="114" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\CHINAE~1\AppData\Local\Temp\Engine_8712_db26081b54f848e9b075cf05457bc5c9_\Engine_8760_3b91d773de0849cd9df83a89cea723a2_.yxdb</TempFile>
+          <TempFile>C:\Users\CHINAE~1\AppData\Local\Temp\Engine_3984_482a3e25dff1439d9475642b7c904322_\Engine_8760_6dd8c01688b248e3a9227b8d0d115191_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -527,11 +527,11 @@ Query=`Sheet1$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="95">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="1254" y="222" />
+        <Position x="1254" y="198" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\CHINAE~1\AppData\Local\Temp\Engine_8712_db26081b54f848e9b075cf05457bc5c9_\Engine_8760_68ffd304e2b1476593783b28e4de31fc_.yxdb</TempFile>
+          <TempFile>C:\Users\CHINAE~1\AppData\Local\Temp\Engine_3984_482a3e25dff1439d9475642b7c904322_\Engine_8760_4ebc57d4bdce4ba1b58b4376e516e87f_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -551,9 +551,152 @@ Query=`Sheet1$`</DefaultAnnotationText>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
     </Node>
+    <Node ToolID="97">
+      <GuiSettings Plugin="Score">
+        <Position x="1038" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="modelChoice">Local Model</Value>
+          <Value name="score field">
+          </Value>
+          <Value name="is oversampled">False</Value>
+          <Value name="oversampled value">
+          </Value>
+          <Value name="original percent">2</Value>
+          <Value name="log y">False</Value>
+          <Value name="prediction.interval">False</Value>
+          <Value name="interval.level">95</Value>
+          <Value name="append.xdf">False</Value>
+          <Value name="num.records">256000</Value>
+          <Value name="credentials">
+          </Value>
+          <Value name="models">
+          </Value>
+          <Value name="page">
+          </Value>
+          <Value name="errorStatus">
+          </Value>
+          <Value name="modelDetailJSON">
+          </Value>
+          <Value name="modelDetails">{"Name":"","Owner":"","Status":"","Id":"","LastDeployment":"","LastUpdated":"","LatestVersion":"","ActiveVersion":"","NumReplications":"","NumVersions":""}</Value>
+          <Value name="promoteURL">
+          </Value>
+          <Value name="username">
+          </Value>
+          <Value name="model_name">
+          </Value>
+          <Value name="model_owner">
+          </Value>
+          <Value name="apiKey">
+          </Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Score\Supporting_Macros\score-engine.yxmc" EngineDll="Macro" EngineDllEntryPoint="Score\Supporting_Macros\score-engine.yxmc" />
+    </Node>
+    <Node ToolID="98">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="930" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\Chinaecherem\Desktop\Altryx project\Predictive_analytics_for_business\Predicting_default_risk\customers-to-score.xlsx|||`Sheet1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>customers-to-score.xlsx
+Query=`Sheet1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Account-Balance" size="255" source="File: C:\Users\Chinaecherem\Desktop\Altryx project\Predictive_analytics_for_business\Predicting_default_risk\customers-to-score.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Duration-of-Credit-Month" source="File: C:\Users\Chinaecherem\Desktop\Altryx project\Predictive_analytics_for_business\Predicting_default_risk\customers-to-score.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Payment-Status-of-Previous-Credit" size="255" source="File: C:\Users\Chinaecherem\Desktop\Altryx project\Predictive_analytics_for_business\Predicting_default_risk\customers-to-score.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Purpose" size="255" source="File: C:\Users\Chinaecherem\Desktop\Altryx project\Predictive_analytics_for_business\Predicting_default_risk\customers-to-score.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Credit-Amount" source="File: C:\Users\Chinaecherem\Desktop\Altryx project\Predictive_analytics_for_business\Predicting_default_risk\customers-to-score.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Value-Savings-Stocks" size="255" source="File: C:\Users\Chinaecherem\Desktop\Altryx project\Predictive_analytics_for_business\Predicting_default_risk\customers-to-score.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Length-of-current-employment" size="255" source="File: C:\Users\Chinaecherem\Desktop\Altryx project\Predictive_analytics_for_business\Predicting_default_risk\customers-to-score.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Instalment-per-cent" source="File: C:\Users\Chinaecherem\Desktop\Altryx project\Predictive_analytics_for_business\Predicting_default_risk\customers-to-score.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Guarantors" size="255" source="File: C:\Users\Chinaecherem\Desktop\Altryx project\Predictive_analytics_for_business\Predicting_default_risk\customers-to-score.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Duration-in-Current-address" source="File: C:\Users\Chinaecherem\Desktop\Altryx project\Predictive_analytics_for_business\Predicting_default_risk\customers-to-score.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Most-valuable-available-asset" source="File: C:\Users\Chinaecherem\Desktop\Altryx project\Predictive_analytics_for_business\Predicting_default_risk\customers-to-score.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Age-years" source="File: C:\Users\Chinaecherem\Desktop\Altryx project\Predictive_analytics_for_business\Predicting_default_risk\customers-to-score.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Concurrent-Credits" size="255" source="File: C:\Users\Chinaecherem\Desktop\Altryx project\Predictive_analytics_for_business\Predicting_default_risk\customers-to-score.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Type-of-apartment" source="File: C:\Users\Chinaecherem\Desktop\Altryx project\Predictive_analytics_for_business\Predicting_default_risk\customers-to-score.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="No-of-Credits-at-this-Bank" size="255" source="File: C:\Users\Chinaecherem\Desktop\Altryx project\Predictive_analytics_for_business\Predicting_default_risk\customers-to-score.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Occupation" source="File: C:\Users\Chinaecherem\Desktop\Altryx project\Predictive_analytics_for_business\Predicting_default_risk\customers-to-score.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="No-of-dependents" source="File: C:\Users\Chinaecherem\Desktop\Altryx project\Predictive_analytics_for_business\Predicting_default_risk\customers-to-score.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Telephone" source="File: C:\Users\Chinaecherem\Desktop\Altryx project\Predictive_analytics_for_business\Predicting_default_risk\customers-to-score.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Foreign-Worker" source="File: C:\Users\Chinaecherem\Desktop\Altryx project\Predictive_analytics_for_business\Predicting_default_risk\customers-to-score.xlsx|||`Sheet1$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="99">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1158" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\CHINAE~1\AppData\Local\Temp\Engine_3984_482a3e25dff1439d9475642b7c904322_\Engine_8760_8e2e8b2bbe5e4698aeddfcbdac7e3908_.yxdb</TempFile>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="100">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1158" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF [Score_Creditworthy]&gt;[Score_Non-Creditworthy] THEN &quot;Creditworthy&quot; ELSE &quot;Not creditworthy&quot; ENDIF" field="Is_Creditworthy" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Is_Creditworthy = IF [Score_Creditworthy]&gt;[Score_Non-Creditworthy] THEN "Creditw...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="101">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1254" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
     <Node ToolID="49">
       <GuiSettings>
-        <Position x="594" y="258" />
+        <Position x="594" y="234" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -571,7 +714,7 @@ Query=`Sheet1$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="72">
       <GuiSettings>
-        <Position x="810" y="138" />
+        <Position x="810" y="114" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -596,7 +739,7 @@ Query=`Sheet1$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="73">
       <GuiSettings>
-        <Position x="810" y="294" />
+        <Position x="810" y="270" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -634,7 +777,7 @@ Query=`Sheet1$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="74">
       <GuiSettings>
-        <Position x="810" y="210" />
+        <Position x="810" y="186" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -694,7 +837,7 @@ Query=`Sheet1$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="75">
       <GuiSettings>
-        <Position x="810" y="378" />
+        <Position x="810" y="354" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -750,11 +893,11 @@ Query=`Sheet1$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="96">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="1254" y="306" />
+        <Position x="1254" y="282" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\CHINAE~1\AppData\Local\Temp\Engine_8712_db26081b54f848e9b075cf05457bc5c9_\Engine_8760_b28384d4e2134e71a3fddc4db4cb76eb_.yxdb</TempFile>
+          <TempFile>C:\Users\CHINAE~1\AppData\Local\Temp\Engine_3984_482a3e25dff1439d9475642b7c904322_\Engine_8760_22c480524469454abe66097e4a06a7c7_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -849,6 +992,26 @@ Query=`Sheet1$`</DefaultAnnotationText>
     <Connection Wireless="True">
       <Origin ToolID="49" Connection="Validation" />
       <Destination ToolID="93" Connection="Data" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="97" Connection="Output" />
+      <Destination ToolID="99" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="97" Connection="Output" />
+      <Destination ToolID="100" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="98" Connection="Output" />
+      <Destination ToolID="97" Connection="Data" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="73" Connection="Output" />
+      <Destination ToolID="97" Connection="Model" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="100" Connection="Output" />
+      <Destination ToolID="101" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="49" Connection="Estimation" />
