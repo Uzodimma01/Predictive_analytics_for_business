@@ -1,0 +1,150 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2020.4">
+  <Nodes>
+    <Node ToolID="2">
+      <GuiSettings>
+        <Position x="174" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="select.unit.id">StoreID</Value>
+          <Value name="select.period.field">Week_end</Value>
+          <Value name="select.performance.measure">Weekly_invoice</Value>
+          <Value name="ReportPeriod">Weekly</Value>
+          <Value name="TrendPeriod">12</Value>
+          <Value name="StartDate">2016-04-29</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="StoreID" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="Trend" source="R-DATA:" type="Double" />
+            <Field name="Seasonality" source="R-DATA:" type="Double" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="StoreID" order="" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\AB_Trend.yxmc" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="66" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\Chinaecherem\Desktop\HDD\New folder\Cleaned dataset\RoundRoastersTransactions_weekly_sales_data.xlsx|||`sheet1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>RoundRoastersTransactions_weekly_sales_data.xlsx
+Query=`sheet1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="StoreID" size="255" source="File: C:\Users\Chinaecherem\Desktop\HDD\New folder\Cleaned dataset\RoundRoastersTransactions_weekly_sales_data.xlsx|||`sheet1$`" type="V_String" />
+            <Field name="Weekly_Gross_Margin" source="File: C:\Users\Chinaecherem\Desktop\HDD\New folder\Cleaned dataset\RoundRoastersTransactions_weekly_sales_data.xlsx|||`sheet1$`" type="Double" />
+            <Field name="Weekly_Sales" source="File: C:\Users\Chinaecherem\Desktop\HDD\New folder\Cleaned dataset\RoundRoastersTransactions_weekly_sales_data.xlsx|||`sheet1$`" type="Double" />
+            <Field name="Week_number" source="File: C:\Users\Chinaecherem\Desktop\HDD\New folder\Cleaned dataset\RoundRoastersTransactions_weekly_sales_data.xlsx|||`sheet1$`" type="Double" />
+            <Field name="Week_start" source="File: C:\Users\Chinaecherem\Desktop\HDD\New folder\Cleaned dataset\RoundRoastersTransactions_weekly_sales_data.xlsx|||`sheet1$`" type="Date" />
+            <Field name="Week_end" source="File: C:\Users\Chinaecherem\Desktop\HDD\New folder\Cleaned dataset\RoundRoastersTransactions_weekly_sales_data.xlsx|||`sheet1$`" type="Date" />
+            <Field name="Weekly_invoice" source="File: C:\Users\Chinaecherem\Desktop\HDD\New folder\Cleaned dataset\RoundRoastersTransactions_weekly_sales_data.xlsx|||`sheet1$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="282" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="25">Round_roaster_seasonality.xlsx|||sheet1</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <PreserveFormat>False</PreserveFormat>
+            <SkipFieldNames>False</SkipFieldNames>
+            <OutputOption>Create</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Round_roaster_seasonality.xlsx
+Query=sheet1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Round_roaster_seasonality</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
