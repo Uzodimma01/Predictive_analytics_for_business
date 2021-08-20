@@ -1,0 +1,225 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2020.4">
+  <Nodes>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="78" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Round_roaster_weekly_traffic.xlsx|||`sheet1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Round_roaster_weekly_traffic.xlsx
+Query=`sheet1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="StoreID" size="255" source="File: C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Round_roaster_weekly_traffic.xlsx|||`sheet1$`" type="V_String" />
+            <Field name="Weekly_Gross_Margin" source="File: C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Round_roaster_weekly_traffic.xlsx|||`sheet1$`" type="Double" />
+            <Field name="Weekly_Sales" source="File: C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Round_roaster_weekly_traffic.xlsx|||`sheet1$`" type="Double" />
+            <Field name="Week_number" source="File: C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Round_roaster_weekly_traffic.xlsx|||`sheet1$`" type="Double" />
+            <Field name="Week_start" source="File: C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Round_roaster_weekly_traffic.xlsx|||`sheet1$`" type="Date" />
+            <Field name="Week_end" source="File: C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Round_roaster_weekly_traffic.xlsx|||`sheet1$`" type="Date" />
+            <Field name="Weekly_invoice" source="File: C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Round_roaster_weekly_traffic.xlsx|||`sheet1$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="78" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Control_treatment_pairs.xlsx|||`sheet1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Control_treatment_pairs.xlsx
+Query=`sheet1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Controls" size="255" source="File: C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Control_treatment_pairs.xlsx|||`sheet1$`" type="V_String" />
+            <Field name="Treatments" size="255" source="File: C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Control_treatment_pairs.xlsx|||`sheet1$`" type="V_String" />
+            <Field name="Distance" source="File: C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Control_treatment_pairs.xlsx|||`sheet1$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings>
+        <Position x="246" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="select.controls.id">Controls</Value>
+          <Value name="select.control.treatment.link">Treatments</Value>
+          <Value name="select.treatments.id">Treatments</Value>
+          <Value name="select.performance.id">StoreID</Value>
+          <Value name="select.performance.period">Week_end</Value>
+          <Value name="select.performance.measure">Weekly_Gross_Margin</Value>
+          <Value name="StartDate">2016-04-29</Value>
+          <Value name="EndDate">2016-07-21</Value>
+          <Value name="custom.comparison.period">False</Value>
+          <Value name="ComparisonStart">1900-01-01</Value>
+          <Value name="ComparisonEnd">1900-01-01</Value>
+          <Value name="test.name" />
+          <Value name="additional.info" />
+          <Value name="measure.alt.name" />
+          <Value name="threshold">0.0</Value>
+          <Value name="save_dashboard" />
+          <Value name="date.format">ymd</Value>
+          <Value name="graph.resolution">1x</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\AB_Analysis.yxmc" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="342" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\CHINAE~1\AppData\Local\Temp\Engine_9112_f17faf174d4e4185b57e4304cecc032d_\Engine_9548_c56ee3d72fb043dc87c3e7a3cc046df9_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="342" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\CHINAE~1\AppData\Local\Temp\Engine_9112_f17faf174d4e4185b57e4304cecc032d_\Engine_9548_ad23d05ac57f4c8d991d1d3fda8ac96a_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="7" Connection="Performance Data" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="7" Connection="Controls" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="7" Connection="Treatments" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Interactive Dashboard" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Round_roaster_transaction_lift</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
