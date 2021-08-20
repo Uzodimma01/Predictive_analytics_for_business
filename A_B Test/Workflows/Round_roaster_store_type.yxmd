@@ -1,0 +1,662 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2020.4">
+  <Nodes>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="222" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="330" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="&quot;Treatment&quot;" field="Store_type" size="255" type="V_String" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Store_type = "Treatment"
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="450" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="StoreID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="StoreID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_StoreID" selected="True" input="Left_" />
+                <SelectField field="Left_Sq_Ft" selected="True" input="Left_" />
+                <SelectField field="Left_AvgMonthSales" selected="True" input="Left_" />
+                <SelectField field="Left_Name" selected="True" input="Left_" />
+                <SelectField field="Left_Phone Number" selected="True" input="Left_" />
+                <SelectField field="Left_Street Combined" selected="True" input="Left_" />
+                <SelectField field="Left_City" selected="True" input="Left_" />
+                <SelectField field="Left_State" selected="True" input="Left_" />
+                <SelectField field="Left_Postal Code" selected="True" input="Left_" />
+                <SelectField field="Left_Region" selected="True" input="Left_" />
+                <SelectField field="Left_Country" selected="True" input="Left_" />
+                <SelectField field="Left_Latitude" selected="True" input="Left_" />
+                <SelectField field="Left_Longitude" selected="True" input="Left_" />
+                <SelectField field="Left_Timezone" selected="True" input="Left_" />
+                <SelectField field="Left_Current Timezone Offset" selected="True" input="Left_" />
+                <SelectField field="Left_Olson Timezone" selected="True" input="Left_" />
+                <SelectField field="Right_Trend" selected="True" input="Right_" />
+                <SelectField field="Right_Seasonality" selected="True" input="Right_" />
+                <SelectField field="Left_Store_type" selected="True" input="Left_" />
+                <SelectField field="Right_StoreID" selected="False" rename="Right_StoreID" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="330" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\Chinaecherem\Desktop\HDD\New folder\Cleaned dataset\Round_roaster_seasonality.xlsx|||`sheet1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Round_roaster_seasonality.xlsx
+Query=`sheet1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="StoreID" size="255" source="File: C:\Users\Chinaecherem\Desktop\HDD\New folder\Cleaned dataset\Round_roaster_seasonality.xlsx|||`sheet1$`" type="V_String" />
+            <Field name="Trend" source="File: C:\Users\Chinaecherem\Desktop\HDD\New folder\Cleaned dataset\Round_roaster_seasonality.xlsx|||`sheet1$`" type="Double" />
+            <Field name="Seasonality" source="File: C:\Users\Chinaecherem\Desktop\HDD\New folder\Cleaned dataset\Round_roaster_seasonality.xlsx|||`sheet1$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="582" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="&quot;Control&quot;" field="Store_type" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Store_type = "Control"
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="582" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>Region</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2021-08-20 02:26:52</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>Central</Operand>
+              <StartDate>2021-08-20 02:26:52</StartDate>
+              <EndDate>2021-08-20 02:26:52</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Region] = "Central"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="450" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Cleaned_round_roaster_central_stores.xlsx|||`sheet1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Cleaned_round_roaster_central_stores.xlsx
+Query=`sheet1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="StoreID" size="255" source="File: C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Cleaned_round_roaster_central_stores.xlsx|||`sheet1$`" type="V_String" />
+            <Field name="Sq_Ft" source="File: C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Cleaned_round_roaster_central_stores.xlsx|||`sheet1$`" type="Double" />
+            <Field name="AvgMonthSales" source="File: C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Cleaned_round_roaster_central_stores.xlsx|||`sheet1$`" type="Double" />
+            <Field name="Street Combined" size="255" source="File: C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Cleaned_round_roaster_central_stores.xlsx|||`sheet1$`" type="V_String" />
+            <Field name="City" size="255" source="File: C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Cleaned_round_roaster_central_stores.xlsx|||`sheet1$`" type="V_String" />
+            <Field name="Postal Code" size="255" source="File: C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Cleaned_round_roaster_central_stores.xlsx|||`sheet1$`" type="V_String" />
+            <Field name="Region" size="255" source="File: C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Cleaned_round_roaster_central_stores.xlsx|||`sheet1$`" type="V_String" />
+            <Field name="Country" size="255" source="File: C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Cleaned_round_roaster_central_stores.xlsx|||`sheet1$`" type="V_String" />
+            <Field name="Latitude" source="File: C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Cleaned_round_roaster_central_stores.xlsx|||`sheet1$`" type="Double" />
+            <Field name="Longitude" source="File: C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Cleaned_round_roaster_central_stores.xlsx|||`sheet1$`" type="Double" />
+            <Field name="Timezone" size="255" source="File: C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Cleaned_round_roaster_central_stores.xlsx|||`sheet1$`" type="V_String" />
+            <Field name="Current Timezone Offset" source="File: C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Cleaned_round_roaster_central_stores.xlsx|||`sheet1$`" type="Double" />
+            <Field name="Olson Timezone" size="255" source="File: C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Cleaned_round_roaster_central_stores.xlsx|||`sheet1$`" type="V_String" />
+            <Field name="Name" size="255" source="File: C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Cleaned_round_roaster_central_stores.xlsx|||`sheet1$`" type="V_String" />
+            <Field name="State" size="255" source="File: C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Cleaned_round_roaster_central_stores.xlsx|||`sheet1$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="450" y="474" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Cleaned_round_roaster_west_stores.xlsx|||`sheet1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Cleaned_round_roaster_west_stores.xlsx
+Query=`sheet1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="StoreID" size="255" source="File: C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Cleaned_round_roaster_west_stores.xlsx|||`sheet1$`" type="V_String" />
+            <Field name="Sq_Ft" source="File: C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Cleaned_round_roaster_west_stores.xlsx|||`sheet1$`" type="Double" />
+            <Field name="AvgMonthSales" source="File: C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Cleaned_round_roaster_west_stores.xlsx|||`sheet1$`" type="Double" />
+            <Field name="Street Combined" size="255" source="File: C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Cleaned_round_roaster_west_stores.xlsx|||`sheet1$`" type="V_String" />
+            <Field name="City" size="255" source="File: C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Cleaned_round_roaster_west_stores.xlsx|||`sheet1$`" type="V_String" />
+            <Field name="Postal Code" size="255" source="File: C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Cleaned_round_roaster_west_stores.xlsx|||`sheet1$`" type="V_String" />
+            <Field name="Region" size="255" source="File: C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Cleaned_round_roaster_west_stores.xlsx|||`sheet1$`" type="V_String" />
+            <Field name="Country" size="255" source="File: C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Cleaned_round_roaster_west_stores.xlsx|||`sheet1$`" type="V_String" />
+            <Field name="Latitude" source="File: C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Cleaned_round_roaster_west_stores.xlsx|||`sheet1$`" type="Double" />
+            <Field name="Longitude" source="File: C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Cleaned_round_roaster_west_stores.xlsx|||`sheet1$`" type="Double" />
+            <Field name="Timezone" size="255" source="File: C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Cleaned_round_roaster_west_stores.xlsx|||`sheet1$`" type="V_String" />
+            <Field name="Current Timezone Offset" source="File: C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Cleaned_round_roaster_west_stores.xlsx|||`sheet1$`" type="Double" />
+            <Field name="Olson Timezone" size="255" source="File: C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Cleaned_round_roaster_west_stores.xlsx|||`sheet1$`" type="V_String" />
+            <Field name="Name" size="255" source="File: C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Cleaned_round_roaster_west_stores.xlsx|||`sheet1$`" type="V_String" />
+            <Field name="State" size="255" source="File: C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Cleaned_round_roaster_west_stores.xlsx|||`sheet1$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="582" y="414" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="774" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="StoreID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="StoreID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_StoreID" selected="True" input="Left_" />
+                <SelectField field="Right_StoreID" selected="False" rename="Right_StoreID" input="Right_" />
+                <SelectField field="Right_Sq_Ft" selected="True" input="Right_" />
+                <SelectField field="Right_AvgMonthSales" selected="True" input="Right_" />
+                <SelectField field="Right_Street Combined" selected="True" input="Right_" />
+                <SelectField field="Right_City" selected="True" input="Right_" />
+                <SelectField field="Right_Postal Code" selected="True" input="Right_" />
+                <SelectField field="Right_Region" selected="True" input="Right_" />
+                <SelectField field="Right_Country" selected="True" input="Right_" />
+                <SelectField field="Right_Latitude" selected="True" input="Right_" />
+                <SelectField field="Right_Longitude" selected="True" input="Right_" />
+                <SelectField field="Right_Timezone" selected="True" input="Right_" />
+                <SelectField field="Right_Current Timezone Offset" selected="True" input="Right_" />
+                <SelectField field="Right_Olson Timezone" selected="True" input="Right_" />
+                <SelectField field="Right_Name" selected="True" input="Right_" />
+                <SelectField field="Right_State" selected="True" input="Right_" />
+                <SelectField field="Left_Trend" selected="True" input="Left_" />
+                <SelectField field="Left_Seasonality" selected="True" input="Left_" />
+                <SelectField field="Left_Store_type" selected="True" input="Left_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1026" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="25">Round_roaster_central_control_stores.xlsx|||sheet1</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <PreserveFormat>False</PreserveFormat>
+            <SkipFieldNames>False</SkipFieldNames>
+            <OutputOption>Create</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Round_roaster_central_control_stores.xlsx
+Query=sheet1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="906" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>Region</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2021-08-20 02:42:39</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>Central</Operand>
+              <StartDate>2021-08-20 02:42:39</StartDate>
+              <EndDate>2021-08-20 02:42:39</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Region] = "Central"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1026" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="25">Round_roaster_west_control_stores.xlsx|||sheet1</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <PreserveFormat>False</PreserveFormat>
+            <SkipFieldNames>False</SkipFieldNames>
+            <OutputOption>Create</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Round_roaster_west_control_stores.xlsx
+Query=sheet1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="66" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Cleaned_west_treatment_stores.xlsx|||`sheet1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Cleaned_west_treatment_stores.xlsx
+Query=`sheet1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="StoreID" size="255" source="File: C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Cleaned_west_treatment_stores.xlsx|||`sheet1$`" type="V_String" />
+            <Field name="Sq_Ft" source="File: C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Cleaned_west_treatment_stores.xlsx|||`sheet1$`" type="Double" />
+            <Field name="AvgMonthSales" source="File: C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Cleaned_west_treatment_stores.xlsx|||`sheet1$`" type="Double" />
+            <Field name="Street Combined" size="255" source="File: C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Cleaned_west_treatment_stores.xlsx|||`sheet1$`" type="V_String" />
+            <Field name="City" size="255" source="File: C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Cleaned_west_treatment_stores.xlsx|||`sheet1$`" type="V_String" />
+            <Field name="Postal Code" size="255" source="File: C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Cleaned_west_treatment_stores.xlsx|||`sheet1$`" type="V_String" />
+            <Field name="Region" size="255" source="File: C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Cleaned_west_treatment_stores.xlsx|||`sheet1$`" type="V_String" />
+            <Field name="Country" size="255" source="File: C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Cleaned_west_treatment_stores.xlsx|||`sheet1$`" type="V_String" />
+            <Field name="Latitude" source="File: C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Cleaned_west_treatment_stores.xlsx|||`sheet1$`" type="Double" />
+            <Field name="Longitude" source="File: C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Cleaned_west_treatment_stores.xlsx|||`sheet1$`" type="Double" />
+            <Field name="Timezone" size="255" source="File: C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Cleaned_west_treatment_stores.xlsx|||`sheet1$`" type="V_String" />
+            <Field name="Current Timezone Offset" source="File: C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Cleaned_west_treatment_stores.xlsx|||`sheet1$`" type="Double" />
+            <Field name="Olson Timezone" size="255" source="File: C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Cleaned_west_treatment_stores.xlsx|||`sheet1$`" type="V_String" />
+            <Field name="Name" size="255" source="File: C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Cleaned_west_treatment_stores.xlsx|||`sheet1$`" type="V_String" />
+            <Field name="State" size="255" source="File: C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Cleaned_west_treatment_stores.xlsx|||`sheet1$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="66" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Cleaned_central_treatment_stores.xlsx|||`sheet1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Cleaned_central_treatment_stores.xlsx
+Query=`sheet1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="StoreID" size="255" source="File: C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Cleaned_central_treatment_stores.xlsx|||`sheet1$`" type="V_String" />
+            <Field name="Sq_Ft" source="File: C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Cleaned_central_treatment_stores.xlsx|||`sheet1$`" type="Double" />
+            <Field name="AvgMonthSales" source="File: C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Cleaned_central_treatment_stores.xlsx|||`sheet1$`" type="Double" />
+            <Field name="Street Combined" size="255" source="File: C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Cleaned_central_treatment_stores.xlsx|||`sheet1$`" type="V_String" />
+            <Field name="City" size="255" source="File: C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Cleaned_central_treatment_stores.xlsx|||`sheet1$`" type="V_String" />
+            <Field name="Postal Code" size="255" source="File: C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Cleaned_central_treatment_stores.xlsx|||`sheet1$`" type="V_String" />
+            <Field name="Region" size="255" source="File: C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Cleaned_central_treatment_stores.xlsx|||`sheet1$`" type="V_String" />
+            <Field name="Country" size="255" source="File: C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Cleaned_central_treatment_stores.xlsx|||`sheet1$`" type="V_String" />
+            <Field name="Latitude" source="File: C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Cleaned_central_treatment_stores.xlsx|||`sheet1$`" type="Double" />
+            <Field name="Longitude" source="File: C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Cleaned_central_treatment_stores.xlsx|||`sheet1$`" type="Double" />
+            <Field name="Timezone" size="255" source="File: C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Cleaned_central_treatment_stores.xlsx|||`sheet1$`" type="V_String" />
+            <Field name="Current Timezone Offset" source="File: C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Cleaned_central_treatment_stores.xlsx|||`sheet1$`" type="Double" />
+            <Field name="Olson Timezone" size="255" source="File: C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Cleaned_central_treatment_stores.xlsx|||`sheet1$`" type="V_String" />
+            <Field name="Name" size="255" source="File: C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Cleaned_central_treatment_stores.xlsx|||`sheet1$`" type="V_String" />
+            <Field name="State" size="255" source="File: C:\Users\Chinaecherem\Desktop\Uzoo\Desktop\Altryx project\Predictive_analytics_for_business\A_B Test\Cleaned datasets\Cleaned_central_treatment_stores.xlsx|||`sheet1$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="714" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="25">Round_roaster_central_treatment_stores.xlsx|||sheet1</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <PreserveFormat>False</PreserveFormat>
+            <SkipFieldNames>False</SkipFieldNames>
+            <OutputOption>Create</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Round_roaster_central_treatment_stores.xlsx
+Query=sheet1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="714" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="25">Round_roaster_westl_treatment_stores.xlsx|||sheet1</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <PreserveFormat>False</PreserveFormat>
+            <SkipFieldNames>False</SkipFieldNames>
+            <OutputOption>Create</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Round_roaster_westl_treatment_stores.xlsx
+Query=sheet1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="6" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="6" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Right" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Join" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="21" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="21" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="True" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="False" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Join" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="False" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="True" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="26" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Round_roaster_store_type</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
