@@ -1,5 +1,5 @@
-# Predictive_analytics_for_business
-This repo contains all the projects I submitted during the Predictive_analytics_for_business
+# Predictive analytics for business
+This repo contains the projects I submitted during the Predictive analytics for business
 NanoDegree scholarship at Udacity.
 
 Here I gave a step by step walkthrough on how I tackled each project, project reviews and
