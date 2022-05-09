@@ -1,4 +1,4 @@
-# Create_an_Analytical_Dataset 
+# Create an Analytical Dataset 
 
 This project deals with data cleansing, formatting and blending of dirty data to create a clean data that can properly analyzed
 
